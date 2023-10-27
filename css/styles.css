@@ -1,0 +1,37 @@
+body {
+    background-color: #365b71;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container {
+    width: 1400px;
+    margin: 10px auto;
+    background-color: #fff;
+    min-height: 150vh;
+}
+nav {
+    background-color: #3f210e;
+    height: 100px;
+    padding: 10px;
+}
+nav img {
+    width: 200px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f210e;
+    background-image: 
+        linear-gradient(#3f210e, transparent),
+        url("../images/ground-up-coffee-shop-2600x1300.jpg");
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    color: #fff;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.75rem;
+}
