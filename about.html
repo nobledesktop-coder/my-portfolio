@@ -1,11 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Ground Up Coffee Shop</title>
+
+    <link href="css/tabby-ui.min.css" rel="stylesheet">
+    <link href="css/splide.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <style>
+        header {
+            background-image: 
+                linear-gradient(#3f210e, transparent),
+                url("images/coffee-history/CoffeeHistory9.jpg");
+                background-position: center 33%;
+        }
+
+        main {
+            /* border: 5px dashed orange; */
+            display: block;
+            padding: 1rem;
+            margin: 1rem auto;
+            max-width: 1100px;
+        }
+
+        /* main img {
+            width: 500px;
+            width: 332px;
+        } */
+
+        main div {
+            text-align: left;
+        }
+
+        main h2 {
+            text-align: center;
+        }
+
+        .splide {
+            padding: 0 55px 35px;
+            border: 5px dashed orange;
+        }
+
+        .tabbed-content {
+            padding-top: 1rem;
+        }
+
+        @media (min-width: 880px) {
+            header {
+                background-image: 
+                linear-gradient(#3f210e, transparent),
+                url("images/forbidden-city-starbucks.jpg");
+                align-items: flex-start;
+                height: 550px;
+                background-position: center bottom;
+            }
+
+        }
+    </style>
+
 </head>
+
 <body>
     
+    <div class="container">
+
+        <nav>
+            <a href="index.html">
+                <img src="images/ground-up-coffee-logo.svg" alt="ground up coffee shop logo">
+            </a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <!-- <h1>About Ground Up Coffee Shop</h1> -->
+        </header>
+
+        <main>
+
+            <!-- tabby : this ul renders as Tabs -->
+            <ul data-tabs>
+                <li><a data-tabby-default href="#about-us">About Us</a></li>
+                <li><a href="#about-our-coffee">About Our Coffee</a></li>
+                <li><a href="#history-of-coffee">History of Coffee</a></li>
+            </ul>
+
+            <div id="about-us" class="tabbed-content">
+               <h2>About Us</h2>
+               <p>Tab 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptate distinctio aut voluptates, laborum quod eaque veniam molestiae illo fugiat ut veritatis! Aperiam voluptatum ipsa voluptate fuga voluptates illo neque iure doloribus ad beatae nihil, deleniti, et, dolor quia explicabo obcaecati quis nobis! Amet quis eum suscipit sapiente quidem nihil?</p>
+            </div>
+
+            <div id="about-our-coffee" class="tabbed-content">
+               <h2>About Our Coffee</h2>
+               <p>Tab 2 Aperiam voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptate distinctio aut voluptates, laborum quod eaque veniam molestiae illo fugiat ut veritatis! Aperiam voluptatum ipsa voluptate fuga voluptates illo neque iure doloribus ad beatae nihil, deleniti, et, dolor quia explicabo obcaecati quis nobis! Amet quis eum suscipit sapiente quidem nihil?</p>    
+            </div>
+
+            <div id="history-of-coffee" class="tabbed-content">
+                <h2>History of Coffee</h2>
+                <p>Tab 3 Amet quis eum suscipitLorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptate distinctio aut voluptates, laborum quod eaque veniam molestiae illo fugiat ut veritatis! Aperiam voluptatum ipsa voluptate fuga voluptates illo neque iure doloribus ad beatae nihil, deleniti, et, dolor quia explicabo obcaecati quis nobis! Amet quis eum suscipit sapiente quidem nihil?</p>   
+
+             </div> <!-- close tabby -->
+
+             <!-- splide carousel -->
+             <h2>History of Coffee Slideshow</h2> 
+             <section class="splide" aria-labelledby="carousel-heading">
+
+                <!-- <h2 id="carousel-heading">History of Coffee</h2> -->
+    
+                <div class="splide__track">
+    
+                    <ul class="splide__list">
+    
+                        <li class="splide__slide">
+                            <img src="images/coffee-history/CoffeeHistory1.jpg" 
+                            alt="Coffee History Image 1">
+                            <h3>Coffee History Image 1</h3>
+                        </li>
+    
+                        <li class="splide__slide">
+                            <img src="images/coffee-history/CoffeeHistory2.jpg" 
+                            alt="Coffee History Image 2">
+                            <h3>Coffee History Image 2</h3>
+                        </li>
+    
+                        <li class="splide__slide">
+                            <img src="images/coffee-history/CoffeeHistory3.jpg" 
+                            alt="Coffee History Image 3">
+                            <h3>Coffee History Image 3</h3>
+                        </li>
+    
+                        <li class="splide__slide">
+                            <img src="images/coffee-history/CoffeeHistory4.jpg" 
+                            alt="Coffee History Image 4">
+                            <h3>Coffee History Image 4</h3>
+                        </li>
+    
+                        <li class="splide__slide">
+                            <img src="images/coffee-history/CoffeeHistory5.jpg" 
+                            alt="Coffee History Image 5">
+                            <h3>Coffee History Image 5</h3>
+                        </li>
+    
+                        <li class="splide__slide">
+                            <img src="images/coffee-history/CoffeeHistory6.jpg" 
+                            alt="Coffee History Image 6">
+                            <h3>Coffee History Image 6</h3>
+                        </li>
+    
+                        <li class="splide__slide">
+                            <img src="images/coffee-history/CoffeeHistory7.jpg" 
+                            alt="Coffee History Image 7">
+                            <h3>Coffee History Image 7</h3>
+                        </li>
+    
+                        <li class="splide__slide">
+                            <img src="images/coffee-history/CoffeeHistory8.jpg" 
+                            alt="Coffee History Image 8">
+                            <h3>Coffee History Image 8</h3>
+                        </li>
+    
+                        <li class="splide__slide">
+                            <img src="images/coffee-history/CoffeeHistory9.jpg" 
+                            alt="Coffee History Image 9">
+                            <h3>Coffee History Image 9</h3>
+                        </li>
+    
+                        <li class="splide__slide">
+                            <img src="images/coffee-history/CoffeeHistory10.jpg" 
+                            alt="Coffee History Image 10">
+                            <h3>Coffee History Image 10</h3>
+                        </li>
+    
+                     </ul>
+    
+                </div>
+    
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="info">
+                <p>718-285-6250</p>
+                <p>57 Grand Street, Brooklyn, NY</p>
+                <p>hello@groundup.com</p>
+            </div>
+
+            <div class="social">
+                <img src="images/icon-facebook.svg" class="facebook">
+                <img src="images/icon-twitter.svg" class="twitter">
+                <img src="images/icon-instagram.png" class="instagram">
+            </div>
+
+            <p>COPYRIGHT &#169 GROUNDUP</p>
+
+        </footer>
+
+    </div>
+
+    <script src="js/tabby.min.js"></script>
+    <script src="js/splide.min.js"></script>
+
+    <script>
+        const tabby = new Tabby('[data-tabs]');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const splide = new Splide('.splide', {
+                rewind: true,
+                perPage: 3,
+                gap: 20,
+                breakpoints: {
+                    850: {
+                        perPage: 2
+                    },
+                    600: {
+                        perPage: 1
+                    }
+                }
+            } );
+            splide.mount();
+        } );
+    </script>
+
 </body>
+
 </html>
